@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Selenium.WebDriver" />
+    <None Remove="Selenium.WebDriver.ChromeDriver" />
+    <None Remove="Drivers\" />
+    <None Remove="Extensions\" />
+    <None Remove="Base\" />
+    <None Remove="Pages\" />
+    <None Remove="Pages\StocksMazeBuyer\" />
+    <None Remove="Pages\StocksMazeSeller\" />
+    <None Remove="Tests\" />
+    <None Remove="System.Configuration.ConfigurationManager" />
+    <None Remove="MSTest.TestFramework" />
+    <None Remove="MSTest.TestAdapter" />
+    <None Remove="MSTest" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Selenium.WebDriver" Version="4.13.1" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="117.0.5938.14900" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.1.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.1.1" />
+    <PackageReference Include="MSTest" Version="3.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Drivers\" />
+    <Folder Include="ElementsInteractions\" />
+    <Folder Include="Base\" />
+    <Folder Include="Pages\" />
+    <Folder Include="Pages\StocksMazeBuyer\" />
+    <Folder Include="Pages\StocksMazeSeller\" />
+    <Folder Include="Tests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="appSetting.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

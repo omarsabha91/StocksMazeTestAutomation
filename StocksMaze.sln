@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1700.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksMaze", "StocksMaze\StocksMaze.csproj", "{9193615D-A6FB-42BC-BAC9-FA3FA8F740DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9193615D-A6FB-42BC-BAC9-FA3FA8F740DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9193615D-A6FB-42BC-BAC9-FA3FA8F740DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9193615D-A6FB-42BC-BAC9-FA3FA8F740DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9193615D-A6FB-42BC-BAC9-FA3FA8F740DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB687C22-6C44-4EDB-A1FF-716A28AD51B0}
+	EndGlobalSection
+EndGlobal
