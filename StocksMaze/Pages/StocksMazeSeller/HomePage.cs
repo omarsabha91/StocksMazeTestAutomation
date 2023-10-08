@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-using StocksMaze.ElementInteractions; 
+using StocksMaze.ElementInteractions;
 namespace StocksMaze.Pages.StocksMazeSeller
 {
     public class HomePage
@@ -9,19 +9,9 @@ namespace StocksMaze.Pages.StocksMazeSeller
         {
             _driver = driver;
         }
+
         // UI Elements locators
-        private By loginButton = By.Id("loginButton"); // Replace with actual locator.
+        public ButtonInteractions SignInButton => new ButtonInteractions(_driver, By.CssSelector("a[href='/login/']"));
 
-        
-
-        // Interactions
-
-        public void ClickLoginButton()
-        {
-            var button = new ButtonInteractions(_driver, loginButton);
-            button.Click();
-        }
-
-     
     }
 }

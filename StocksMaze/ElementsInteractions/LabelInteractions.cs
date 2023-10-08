@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-using StocksMaze.Drivers.Extensions;
+using StocksMaze.Drivers;
 namespace StocksMaze.ElementInteractions
 {
     public class LabelInteractions

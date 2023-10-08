@@ -10,15 +10,10 @@ namespace StocksMaze.Pages.StocksMazeBuyer
             _driver = driver;
         }
         // UI Elements locators
-        private By loginButton = By.Id("loginButton"); // Replace with actual locator.
+        public ButtonInteractions ProfileMenuButton => new ButtonInteractions(_driver, By.Id("profileMenu"));
+        //public By SignInButtonLocator = By.CssSelector("input[title='submit']");
 
-        // Interactions
 
-        public void ClickLoginButton()
-        {
-            var button = new ButtonInteractions(_driver, loginButton);
-            button.Click();
-        }
 
     }
 }

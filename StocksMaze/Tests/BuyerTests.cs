@@ -1,15 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 
 [TestClass]
-public class BuyerTests : TestBase
+public class BuyerTests : BuyerTestBase
 {
-    [TestInitialize]
-    public void BuyerSetup()
-    {
-        Driver = DriverManager.CreateWebDriver();
-        string baseUrl = Config.Stocksmaze;
-        Driver.Navigate().GoToUrl(baseUrl);
-    }
 
     [TestMethod]
     public void HomePageSmokeTest()

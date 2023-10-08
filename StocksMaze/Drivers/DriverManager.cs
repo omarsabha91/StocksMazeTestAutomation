@@ -4,6 +4,8 @@ using OpenQA.Selenium.Chrome;
 
 public static class DriverManager
 {
+    public static IWebDriver driver;
+
     public static IWebDriver CreateWebDriver()
     {
       
