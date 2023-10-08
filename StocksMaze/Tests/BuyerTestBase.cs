@@ -22,7 +22,6 @@ public class BuyerTestBase
     [TestInitialize]
     public void TestInitialize()
     {
-        Driver = DriverManager.CreateWebDriver();
         string baseUrl = Config.Stocksmaze;
         Driver.Navigate().GoToUrl(baseUrl);
     }

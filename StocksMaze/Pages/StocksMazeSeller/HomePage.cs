@@ -11,7 +11,7 @@ namespace StocksMaze.Pages.StocksMazeSeller
         }
 
         // UI Elements locators
-        public ButtonInteractions SignInButton => new ButtonInteractions(_driver, By.CssSelector("a[href='/login/']"));
+        public ButtonInteractions SignInButton => new ButtonInteractions(_driver, By.XPath("/html/body/div/header/nav/div/div/div/div[2]/a"));
 
     }
 }
