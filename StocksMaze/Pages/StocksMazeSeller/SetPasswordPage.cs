@@ -11,7 +11,7 @@ namespace StocksMaze.Pages.StocksMazeSeller
 		            _driver = driver;
 		}
 
-
+		
 	}
 }
 
