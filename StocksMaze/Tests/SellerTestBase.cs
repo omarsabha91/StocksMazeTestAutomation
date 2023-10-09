@@ -8,7 +8,10 @@ public class SellerTestBase
 {
     protected IWebDriver Driver { get; set; }
     protected StocksMaze.Pages.StocksMazeSeller.HomePage SellerHomePage { get; private set; }
-
+    protected StocksMaze.Pages.StocksMazeSeller.SignUpPage SignUpPage { get; private set; }
+    protected StocksMaze.Pages.StocksMazeSeller.SignInPage SignInPage { get; private set; }
+    protected StocksMaze.Pages.StocksMazeSeller.SetPasswordPage SetPasswordPage { get; private set; }
+    protected StocksMaze.Pages.StocksMazeSeller.OTPVerificationPage OTPVerificationPage { get; private set; }
     public SellerTestBase()
     {
         if (DriverManager.driver == null)
@@ -18,6 +21,10 @@ public class SellerTestBase
 
         Driver = DriverManager.driver;
         SellerHomePage = new StocksMaze.Pages.StocksMazeSeller.HomePage(Driver);
+        SignUpPage = new StocksMaze.Pages.StocksMazeSeller.SignUpPage(Driver);
+        SignInPage = new StocksMaze.Pages.StocksMazeSeller.SignInPage(Driver);
+        SetPasswordPage = new StocksMaze.Pages.StocksMazeSeller.SetPasswordPage(Driver);
+        OTPVerificationPage = new StocksMaze.Pages.StocksMazeSeller.OTPVerificationPage(Driver);
     }
     [TestInitialize]
     public void TestInitialize()
