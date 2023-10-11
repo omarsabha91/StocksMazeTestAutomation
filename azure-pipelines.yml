@@ -1,4 +1,28 @@
-- task: PublishTestResults@2
+trigger:
+- main  # This pipeline will trigger on changes to the main branch. Adjust if needed.
+
+pool:
+  vmImage: 'windows-latest'  # Using a Windows VM because .NET (non-core) typically requires Windows.
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+- task: NuGetToolInstaller@1  # Install the latest NuGet version.
+
+- task: NuGetCommand@2  # Restore any NuGet packages.
   inputs:
-    testResultsFormat: 'JUnit'
-    testResultsFiles: '**/TEST-*.xml'
+    restoreSolution: '$(solution)'
+
+- task: VSBuild@1  # Build the solution.
+  inputs:
+    solution: '$(solution)'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+
+- task: VSTest@2  # Run tests using the Visual Studio Test platform.
+  inputs:
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
