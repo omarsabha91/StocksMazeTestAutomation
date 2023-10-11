@@ -6,7 +6,7 @@ public class BuyerTests : BuyerTestBase
 {
 
     [TestMethod]
-    public void HomePageSmokeTest()
+    public void BuyerHomePageSmokeTest()
     { 
         Assert.IsTrue(Driver.Title.Contains("Buy with Confidence: Connect with Local & Global Sellers | Stocks Maze"), "The title did not contain the expected text.");
     }
