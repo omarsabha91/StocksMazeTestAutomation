@@ -8,7 +8,7 @@ public class SellerTests : SellerTestBase
 {
 
     [TestMethod]
-    public void HomePageSmokeTest()
+    public void SellerHomePageSmokeTest()
     {
       
         Assert.IsTrue(Driver.Title.Contains("Grow Your Business on Stocks Maze: Your Seller Hub"), "The title did not contain the expected text.");
